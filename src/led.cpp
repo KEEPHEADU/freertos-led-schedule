@@ -50,7 +50,8 @@ void LED::Blink(uint32_t changeRateMS, uint16_t R, uint16_t G, uint16_t B,
 
 void LED::Blink(uint32_t onTimeMS, uint32_t offTimeMS, uint16_t R, uint16_t G,
                 uint16_t B, uint16_t _blink_count) {
-  xTimerStop(led_timer, pdMS_TO_TICKS(1000));
+//   xTimerStop(led_timer, pdMS_TO_TICKS(1000));
+  Set(false, 0, 0, 0);
   mR = R;
   mG = G;
   mB = B;

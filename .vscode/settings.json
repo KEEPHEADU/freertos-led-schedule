@@ -1,7 +1,0 @@
-{
-    "files.associations": {
-        "ledc.h": "c",
-        "led_ctrl.h": "c",
-        "led.h": "c"
-    }
-}
